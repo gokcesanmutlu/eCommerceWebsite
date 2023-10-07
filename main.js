@@ -162,7 +162,7 @@ function renderBasket() {
            <h3 class="title">${item.title.slice(0, 20) + "..."}</h3>
            <h4 class="price">$${item.price}</h4>
            <p>Miktar: ${item.amount}</p>
-           <img onclick="handleDelete()" id="delete-img" src="images/e-trash.png" alt="">
+           <img onclick="handleDelete(${item.id})" id="delete-img" src="images/e-trash.png" alt="">
         </div>`
     )
     .join(" ");
@@ -185,13 +185,13 @@ function calculateTotal() {
 
 // Ürünü toplamdan siler
 function handleDelete(deleteId) {
-  // Kaldırılacak ürünü diziden çıkarma
+  // kaldırılacak ürünü diziden çıkarma
   const newArray = basket.filter((i) => i.id !== deleteId);
   basket = newArray;
 
-  // Listeyi günceller
+  // listeyi günceller
   renderBasket();
 
-  // Toplamı günceller
+  // toplamı güncelle
   calculateTotal();
 }
