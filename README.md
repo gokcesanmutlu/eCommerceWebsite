@@ -19,4 +19,4 @@
 </body>
 </html>
 
-<!--Screenshot ![eCommerceWebsite](.gif) -->
+Screenshot ![eCommerceWebsite](ecommerce.gif)
