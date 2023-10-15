@@ -265,11 +265,11 @@ section {
   background-color: rgba(128, 128, 128, 0.322);
   /* çocuk elemanı merkeze hizalar */
   display: none;
-  place-items: center;
 }
 
 .active {
-  display: grid;
+  display: grid !important;
+  place-items: center;
 }
 
 .modal {
